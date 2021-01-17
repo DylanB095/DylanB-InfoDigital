@@ -1,0 +1,266 @@
+/*  LOADDING  */
+
+.BodyLoading {
+    /*Fond d'ecran*/
+    background: url(../img/test.jpg) 0 0 no-repeat;
+    /*Hauteur du parent (extensible selon type de support (telephone , tablette ))*/
+    min-height: 100vh;
+    height: auto;
+    background-size: cover;
+    /*Largeur*/
+    width: 100%;
+    padding: 40px 0px 20px 0px;
+    position: fixed;
+    z-index: 1;
+}
+
+.loading-area {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    opacity: 0.9;
+    background: /* #25272e ou  */
+    #000;
+}
+
+.loader {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -100px 0 0 -100px;
+    font-size: 30px;
+    color: #fff;
+    font-style: oblique;
+    font-weight: bold;
+    /* La perspective est utilisée pour donner une certaine perspective à un élément positionné en 3D.
+     La perspectivepropriété définit la distance entre l'objet et l'utilisateur. Ainsi, une valeur inférieure entraînera un effet 3D plus intense qu'une valeur plus élevée.
+    Lors de la définition de la perspectivepropriété d'un élément, ce sont les éléments CHILD qui obtiennent la vue en perspective, PAS l'élément lui-même. */
+    perspective: 200px;
+}
+
+.loader_anim1,
+.loader_anim2 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid;
+    border-left-color: #7a3ae9;
+    border-top-color: skyblue;
+    border-right-color: #d80ebc;
+    border-bottom-color: #f6fff6;
+    left: 50%;
+    top: 50%;
+    margin: -100px 0 0 -100px;
+    animation: loadAnim 3s;
+    /* La animation-iteration-countpropriété spécifie le nombre de fois qu'une animation doit être lue */
+    animation-iteration-count: infinite;
+}
+
+.loader_anim2 {
+    animation: loadAnim2 3s;
+    /* La animation-iteration-countpropriété spécifie le nombre de fois qu'une animation doit être lue */
+    animation-iteration-count: infinite;
+}
+
+@keyframes loadAnim {
+    0% {
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+    100% {
+        transform: rotate3d(1, 1, 1, -360deg);
+    }
+}
+
+@keyframes loadAnim2 {
+    0% {
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+    100% {
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+}
+
+
+/* ------------------------------------------------------------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ProfilHeader {
+    /*Fond d'ecran*/
+    background: url(..//img/ImgMeDecouv.jpg) 0 0 no-repeat;
+    /*Hauteur du parent (extensible selon type de support (telephone , tablette ))*/
+    min-height: 100vh;
+    /*  opacity: .9; */
+    height: auto;
+    background-size: cover;
+    /*Largeur*/
+    width: 100%;
+    padding: 40px 0px 20px 0px
+}
+
+.ProfilHeader figure {
+    width: 200px;
+    height: 200px;
+    background: white;
+    /*  "Margin auto" = Centrer ; "Border-radius" = Faire un rond (50%) ou forme carre arrondit (50 Px) */
+    margin: auto;
+    border-radius: 50px;
+    padding-left: 10px
+}
+
+.ProfilHeader figure:hover {
+    transform: scale(1.05);
+    transition: 1.5s;
+}
+
+.ProfilHeader figure a img:hover {
+    transform: rotateY(360deg);
+    transition: 1.5s;
+}
+
+.Bula {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    /*  "display:flex" = Mettre a cotés des un et des autres */
+    display: flex;
+    /*  "flex-wrap" = Autorisation de passer a la ligne */
+    flex-wrap: wrap
+}
+
+.gauche,
+.centre,
+.droite
+/* "," = Mais aussi */
+
+{
+    width: 33.33%;
+    color: white;
+    text-align: center;
+    min-width: 320px;
+    /* "flex:1" = Agencement intélligent*/
+    flex: 1;
+    margin-bottom: 20px
+}
+
+@media screen and (max-width:800px) {
+    .gauche {
+        order: 2
+    }
+    .Bula {
+        width: 100%
+    }
+}
+
+.Bula a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 200px;
+    padding: 10px;
+    background: transparent;
+    /*"solid"=Trait continue
+        "dashed"= trait espacé 
+        "dotted"= trait pointiller */
+    border: 2px dotted white;
+    border-radius: 10px;
+    margin: 10px auto 0px auto;
+    transition: .5s
+}
+
+.Bula a:hover {
+    background: white;
+    border: 2px dotted skyblue;
+    color: black;
+    opacity: .55;
+    transform: scale(1.08);
+    outline: none;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner main {
+    max-width: 45rem;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.Section1 {
+    background: white;
+    opacity: .5;
+    border-radius: 20px;
+    padding: 5px 5px 20px 5px;
+}
+
+.Article1 {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.Apropos {
+    display: block;
+    text-align: center;
+    /* opacity: .8; */
+    color: black;
+    font-size: 20px;
+    width: 200px;
+    padding: 10px;
+    border: 1px dotted grey;
+    margin: 20px auto;
+    border-radius: 10px
+}
+
+ul {
+    list-style: none
+}
+
+.Article2 a {
+    text-decoration: none;
+}
+
+.Decouvrir {
+    display: block;
+    text-align: center;
+    background: transparent;
+    color: black;
+    font-size: 20px;
+    width: 200px;
+    padding: 10px;
+    border: 1px dotted grey;
+    margin: 50px auto;
+    border-radius: 10px;
+    transition: all ease-in-out 500ms;
+}
+
+.Decouvrir:hover {
+    background: white;
+    opacity: .6;
+    transform: scale(1.15);
+    /* transform: rotate(180deg); */
+    transition: 1s;
+}
+
+.Decouvrir:active {
+    background: white;
+    opacity: .8;
+}

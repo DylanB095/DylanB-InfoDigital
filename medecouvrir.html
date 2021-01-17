@@ -1,0 +1,332 @@
+<!--
+En HTML, le doctype est le préambule "<! DOCTYPE html>" 
+    requis en haut de tous les documents. 
+    Son seul but est d'empêcher un navigateur 
+    de passer en soi-disant “quirks mode” 
+    lors du rendu d'un document ;
+    c'est-à-dire que le doctype "<!DOCTYPE html>" 
+    garantit que le navigateur fait de son mieux pour suivre les spécifications pertinentes, plutôt que d'utiliser un mode de rendu 
+    différent incompatible avec certaines spécifications.
+-->
+<!DOCTYPE html>
+<!-- HyperText Markup Language -->
+<html lang="fr">
+
+
+<!--
+    Le contenu de l'en-tête HTML <head> — à la difference du contenu de l'élément <body> (affiché quand la page est chargée par le navigateur) — n'est pas affiché dans la page du navigateur.
+    Le travail de la balise <head> est de contenir les métadonnées à propos du document.
+-->
+
+<head>
+    <title>Dylan Bula</title>
+    <!--
+        Un élément de fenêtre <meta> donne au navigateur des instructions sur la façon de contrôler les dimensions et la mise à l'échelle de la page.
+        La partie width = device-width définit la largeur de la page pour suivre la largeur d'écran de l'appareil (qui variera en fonction de l'appareil).
+        La partie initiale-échelle = 1.0 définit le niveau de zoom initial lors du premier chargement de la page par le navigateur.
+    -->
+    <meta name="description" content=" A Qui Quoi Ou">
+    <!--http://my-digital-job.fr/cours/-->
+    <meta name="author" content="Nom prenom annee">
+    <meta charset="UTF-8">
+    <!--
+    L'élément HTML External Resource Link (<link>) spécifie les relations entre le document actuel et une ressource externe. 
+    Cet élément est le plus souvent utilisé pour créer un lien vers des feuilles de style, mais est également utilisé pour établir des icônes de site (à la fois des icônes de style "favicon" et des icônes pour l'écran d'accueil et les applications sur les appareils mobiles) entre autres.
+    -->
+    <link rel="stylesheet" href="css/medecouvrir.css">
+    <!--"device" = Different type d'ecran (5)-->
+    <!--"scale=1" = Autorisation du Zoom
+    "scale=0" = Non autorisation du Zomm-->
+    <meta name="viewport" content="width=device_width,initial-scale=1">
+
+</head>
+
+<!--La toile-->
+
+<body>
+    <div class="BodyMeDecouvrir">
+
+
+        <!-- Loading (CHARGEMENT DE MA PAGE) -->
+        <div class="BodyLoading">
+            <div class="loading-area">
+                <span class="loader">Chargement...</span>
+                <span class="loader_anim1"></span>
+                <span class="loader_anim2"></span>
+            </div>
+        </div>
+
+        <!--Entête-->
+        <header class="MeDecouvrir">
+            <!--Logo-->
+            <figure>
+                <a href="/portfolioprofil.html"><img src="img/dylanlogo.svg" alt="LogoDB" width="180" height="180"></a>
+            </figure>
+
+            <div class="Bula">
+                <div class="gauche">
+                    <!--"P"=Paragraphe ; "BR"=Revenir a la ligne-->
+                    <p>95220 Herblay Sur Seine</p>
+                    <br>
+                    <a href="mailto:Dylan.bula@gmail.com">Dylan.bula@gmail.com</a>
+                    <!-- "a" = bouton liens -->
+                    <!-- "href" = attribut (lien) -->
+                    <a href="tel: +33 7 55 21 86 40 ">07 55 21 86 40</a>
+                </div>
+
+                <div class="centre">
+                    <!--"H1"=1er Titre (autoriser qu'une fois), "H2"=2eme Titre -->
+                    <h1>Dylan Bula</h1>
+                    <h2>Developpeur Full Stack - JS Junior</h2>
+                </div>
+
+                <div class="droite">
+                    <a href="https://github.com/DylanB095" target="new
+                ">GitHub</a>
+                    <a href="https://www.linkedin.com/in/dylan-bula-4629041bb/" target="new
+                    ">Linkedin</a>
+                    <a href=pdf/CV_2021-01-09_Dylan_Bula.pdf download="new" target="new">Telecharger mon CV</a>
+                </div>
+            </div>
+
+        </header>
+
+        <!-- -------------------------------------------------------------------------------------------------------------------------- -->
+        <br>
+
+        <main id="ElementMain">
+
+            <section>
+                <article>
+                    <h3>EXPERIENCES PROFESSIONNELLES</h3>
+                    <br><br>
+                    <ul>
+                        <li><span>D'avril 2020 à juin 2020 </span>Chauffeur livreur Houra à Gennevilliers</li>
+                        <br><br>
+
+                        <li><span>Déc. 2019 à Fév. 2020 </span>Auxiliaire polyvalent - GESPA Restauration à Meaux</li><br>
+                        <p>- Contrôle du chargement des chariots (quantité et qualité)<br>- Mise en place des chariots de distribution (desserte) et process de distribution comme indiqué lors de la formation R2C<br>- Respect des consignes d’hygiène</p>
+                        <br><br>
+
+                        <li><span>Fév. 2019 à Juin 2019 </span>Chauffeur livreur - HG2(H Gourmet) à Chennevières-les-Louvres</li><br>
+                        <p>- Prise de connaissance des papiers d’expedition et de livraison<br>- Vérification et chargement des produits <br>- Vérification et chargement des produits <br>- Définition du trajet optimal <br>- Encaissement si paiement en contre-retour
+                        </p>
+                        <br><br>
+
+                        <li><span>Nov. 2017 à Janv 2018 </span>Préparateur de commandes - VENTE PRIVEE : DERICHEBOURG INTERIM à Le Blanc-Mesnil</li>
+                        <br><br>
+
+                        <li><span>Octobre 2015 à Nov. 2015 </span>Equipier reception - TOYS’R’US à Aulnay Sous Bois</li>
+                        <br><br>
+
+                        <li><span>Juillet 2011 à Aout 2011 </span>Apprenti maconnerie & Plomberie - ENTREPRISE DU BATIMENT à Drancy</li><br>
+                        <p>- Utiliser différents matériaux : ciments , colle , isolant<br>- Mettre en place des coffrages</p>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>DIPLOMES & FORMATION</h3>
+                    <br><br>
+                    <ul>
+                        <li><span>Depuis juillet 2020 </span>Développeur Web et Web Mobile Digital France School à Cergy</li><br>
+                        <p>- Apprentissage sur le Developpement Web Full Stack <br>- Réalisation d'un projet complet : Site E-commerce <b>(à retrouver version locale sur mon GitHub)</b></p>
+                        <br><br>
+
+                        <li><span>Février 2020 </span>Formation sur le Numérique : DIGI’POP - Convergence Entrepreneur à Aulnay-Sous-Bois</li><br>
+                        <p>- Initiation sur L’info-Graphisme <br>- Initiation sur le Developpement Web <br>- Initiation sur la Modélisation 3D </p>
+                        <br><br>
+
+                        <li><span>Décembre 2019 </span>Formation HACCP ( Hazard Analysis Critical Control Point ) à Meaux</li><br>
+                        <p>- Analyse des dangers , points critiques pour leur maîtrise</p>
+                        <br><br>
+
+                        <li><span>Décembre 2013 à Avril 2014 </span>Niveau Universitaire Technique : Genie Mécanique et Productique IUT D'Evry</li>
+                        <br><br>
+
+                        <li><span>2010 à 2013 </span>Baccalauréat STI2D ( Science technologique de l'industrie et du développement durable ) Lycée Paul Le Rolland à Drancy</li>
+                        <br><br>
+
+                        <li><span>2012 </span>Formation PMPDN ARMEE DE L'AIR à Sainte</li><br>
+                        <p>- Topographie (carte , boussole)<br>- Actes réflexes et élémentaire du combattant ( parcours du combattant , tir au Famas a blanc )<br>- Acquisition des connaissances militaire générales et des savoirs faire pédagogiques</p>
+                    </ul>
+                </article>
+            </section>
+
+
+            <section>
+                <article>
+                    <h3>COMPETENCES</h3>
+                    <br><br>
+
+                    <ul>
+                        <li>SAVOIRS ETRE</li>
+                        <br><br>
+                        <p>Manifester de l’autonomie , de l’organisation et de la vigilance </p>
+
+                        <br><br><br><br><br>
+
+                        <li> SAVOIRS FAIRE</li>
+                        <br><br>
+                        <p>- Concevoir une interface utilisateur ( site dynamique,vitrine )<br><br> - Connaissances en BACK (NodeJS, MySQL, Postman)<br><br> - Réaliser du code sur Visual Studio Code<br><br> - Connaissances en FRONT ( HTLM,CSS ,VueJS)<br><br>                            - Débugages<br><br> - Création de tracé vectoriel</p>
+                    </ul>
+
+                </article>
+
+                <article>
+                    <h3>INFORMATIQUES - LANGUE</h3>
+                    <br><br>
+
+                    <ul>
+                        <li>EXEL/WORD</li>
+                        <br>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="50">
+                                <p>Graphique , Tableur </p>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+
+                        <li>POWER POINT/MINDVIEW</li>
+                        <br>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="50">
+                                <p>Organigrammes , mise en pages </p>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+
+                        <li>SOLIDWORKS</li>
+                        <br>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="50">
+                                <p>Modélisation 3D</p>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+
+                        <li>PHOTOSHOP</li>
+                        <br>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="60">
+                                <p>Logiciel de retouche, de traitement et de dessin</p>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+
+                        <li>VISUAL STUDIO CODE</li>
+                        <br>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="70">
+                                <p>Éditeur de code</p>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+
+                        <li>HTLM/CSS</li>
+                        <br>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="60">
+                                <p>Codages </p>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+
+                        <li>NODE JS</li>
+                        <br>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="40">
+                                <p>Base de données, API, Postman </p>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+
+                        <li>VUE JS</li>
+                        <br>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="40">
+                                <p>Construction interface utilisateur</p>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+
+                        <li>ANGLAIS</li>
+                        <br>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="30">
+                                <p>Notions</p>
+                            </div>
+                        </div>
+                        <br>
+
+                    </ul>
+                </article>
+
+
+            </section>
+
+            <section>
+
+                <article>
+                    <h3>CENTRE D'INTERETS</h3>
+                    <br>
+                    <ul>
+                        <li>SPORTS</li><br>
+                        <p>- Musculation<br>- Course à pied<br>- Boxe thaïlandaise</p>
+                        <br>
+                        <li>LOISIRS</li><br>
+                        <p>- Lecture<br>- Cuisine <br>- Bricolage</p>
+                    </ul>
+                </article>
+
+            </section>
+
+        </main>
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script>
+            /* FONCTIONALITER DE MON LOADER EN JQUERY */
+            setTimeout(function() {
+                $('.BodyLoading').fadeToggle();
+            }, 1500);
+
+            /* FONCTIONALITER DE MON SKILL EN JQUERY  */
+            $('.skill-per').each(function() {
+                var $this = $(this);
+                var per = $this.attr('per');
+                $this.css("width", per + '%');
+                $({
+                    animatedValue: 0
+                }).animate({
+                    animatedValue: per
+                }, {
+                    duration: 1000,
+                    step: function() {
+                        $this.attr('per', Math.floor(this.animatedValue) + '%');
+                    },
+                    complete: function() {
+                        $this.attr('per', Math.floor(this.animatedValue) + '%');
+                    }
+                });
+            });
+        </script>
+    </div>
+</body>
+
+</html>

@@ -12,6 +12,10 @@
     padding: 40px 0px 20px 0px;
     position: fixed;
     z-index: 1;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .loading-area {
@@ -99,11 +103,13 @@
 
 .ProfilHeader {
     /*Fond d'ecran*/
-    background: url(..//img/ImgMeDecouv.jpg) 0 0 no-repeat;
+    background-image: url("../img/imgmedecouv.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
     /*Hauteur du parent (extensible selon type de support (telephone , tablette ))*/
     min-height: 100vh;
-    /*  opacity: .9; */
     height: auto;
+    /*  opacity: .9; */
     background-size: cover;
     /*Largeur*/
     width: 100%;
